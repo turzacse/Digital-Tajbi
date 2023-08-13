@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- For website logo  -->
+    <!-- <link rel="icon" href="images/fruit1.png" type=""> -->
+
+    <title>Digital Tojbi</title>
+    <!-- tailwind css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- open sence google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <!-- font awesome link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+
+    <!-- google font style -->
+    <style>
+        .openfont {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+
+
+    <!-- custom color  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        pcolor: '#12121299',
+                        bcolor: '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/f2c84d4348.js" crossorigin="anonymous"></script>
+
+
+</head>
+<!-- start main file  -->
+
+<body class="mx-auto">
+    <section class="lg:mt-20 mt-2 flex justify-center">
+        <div class="mockup-phone border-primary">
+            <div class="camera"></div> 
+            <div class="display">
+              <div class="artboard artboard-demo phone-1">
+                <h2 class="text-sky-500 font-bold text-2xl mb-4">Fahim Montasir Turza</h2>
+                <!-- design a cart here  -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="tajbi.jpg" alt="Shoes" class="rounded-xl h-40" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Digital Tajbi</h2>
+
+                      <div class="flex gap-4 font-bold text-xl">
+                        
+                        <h1>الله أكبر</h1>
+                        <h1>ٱلْحَمْدُ لِلَّٰهِ</h1>
+                        <h1>تَسْبِيح</h1>
+                      </div>
+                      <div id="board" class="font-bold text-3xl bg-purple-200 rounded-full p-4">
+                        
+                      </div>
+                      <div class="card-actions">
+                        <button id="countdown" onclick="countdown()" class="btn bg-green-600 text-white">Count</button>
+                        <button id="reset" onclick="reset()" class="btn bg-red-600 text-white">Reset</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- end of cart -->
+              </div>
+            </div>
+          </div>
+    </section>
+    
+
+     <script>
+        let y= document.getElementById("board");
+        y.innerText=0;
+      function countdown()
+      {
+        let x= document.getElementById("countdown");
+        y.innerText++;
+      }
+      function reset()
+      {
+        let x= document.getElementById("countdown");
+        y.innerText=0;
+      }
+     </script>
+    <script src="tajbi.js"></script>
+</body>
+
+</html>
